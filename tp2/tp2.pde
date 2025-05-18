@@ -58,7 +58,7 @@ void draw() {
     // Pantalla dos
     pushStyle();
     image(img2, 0, 0, width, height);
-    fill(250, 2, 255);
+    fill(255);
     PFont fuente;
     fuente = loadFont ("CambriaMath-48.vlw");
     textFont(fuente);
