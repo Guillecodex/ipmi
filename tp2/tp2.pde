@@ -10,6 +10,9 @@ int opacidad;
 
 void setup() {
   size(640, 480);
+
+// Cargo las imágenes
+
   img1 = loadImage("pantallauno.jpg");
   img2 = loadImage("pantallados.jpg");
   img3 = loadImage("pantallatres.jpg");
@@ -25,6 +28,8 @@ void setup() {
 
 void draw() {
   println("pantalla=" + pantalla);
+
+// Pantalla uno
 
   if (pantalla == 1) {
     // Pantalla uno
@@ -46,6 +51,9 @@ void draw() {
       opacidad = 255;
     }
     popStyle();
+
+// Pantalla dos
+
   } else if (pantalla == 2) {
     // Pantalla dos
     pushStyle();
@@ -67,6 +75,9 @@ void draw() {
       posY2 = 0;
     }
     popStyle();
+
+// Pantalla tres
+
   } else if (pantalla == 3) {
     // Pantalla tres
     pushStyle();
@@ -94,6 +105,9 @@ void draw() {
     }
 
     popStyle();
+
+// Pantalla cuatro
+
   } else if (pantalla == 4) {
     // Pantalla cuatro
     pushStyle();
@@ -111,16 +125,19 @@ void draw() {
       contador++;
       if (contador > 100) {
         pantalla = 5;
-        // Se reinicia la opacidad
+        // Se reinicia la opacidad, así se evita tener conflictos con la animación de la pantalla cinco
         opacidad = 0;
       }
     }
+
+// Pantalla cinco
+
   } else if (pantalla == 5) {
     // Pantalla cinco
     pushStyle();
     image(img5, 0, 0, width, height);
 
-    // Incrementa opacidad hasta 255
+    // Incrementa opacidad hasta 255, haciendo lo contrario a la pantalla uno
     if (opacidad < 255) {
       opacidad += 2;
     }
@@ -141,7 +158,7 @@ void draw() {
 
 void mousePressed() {
   if (pantalla == 5) {
-    // colisión
+    // Colisión
     if (mouseX > 520 && mouseX < 520 + 100
       && mouseY > 420 && mouseY < 420 + 40) {
       pantalla = 1;
