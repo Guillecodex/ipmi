@@ -112,7 +112,7 @@ void draw() {
     // Pantalla cuatro
     pushStyle();
     image(img4, 0, 0, width, height);
-    String parrafocuatro = "Este es el texto de la cuarta pantalla que sube desde abajo.";
+    String parrafocuatro = "En la cárcel, conoce al abate Faria, un\nprisionero que se convierte en su mentor\n y le revela la existencia de un tesoro oculto\nen la isla de Montecristo. Tras su muerte,\nEdmond logra escapar y, siguiendo las\ninstrucciones del abate, encuentra el tesoro.";
     textSize(24);
     textAlign(LEFT, TOP);
     fill(222);
