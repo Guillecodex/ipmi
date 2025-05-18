@@ -144,7 +144,7 @@ void draw() {
 
     fill(255, opacidad);
     textSize(24);
-    text("Al final, Edmond comprende que el odio lo consumió durante años, y decide dejar atrás su identidad como Conde de Montecristo y parte en busca de una nueva vida.", 20, 40);
+    text("Al final, Edmond comprende que el odio lo consumió\ndurante años, y decide dejar atrás su identidad como\nConde de Montecristo y parte en busca de una nueva vida.", 20, 40);
 
     // Botón
     fill(178, 54, 8);
