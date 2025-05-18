@@ -63,7 +63,7 @@ void draw() {
     fuente = loadFont ("CambriaMath-48.vlw");
     textFont(fuente);
     String parrafodos;
-    parrafodos = "Cuenta la historia de Edmond Dantès, un joven marinero marsellés prometido con su novia Mercedes, que es injustamente acusado de traición";
+    parrafodos = "Cuenta la historia de Edmond Dantès, un joven marinero marsellés prometido con su novia Mercedes, y que es injustamente acusado de traición";
     textSize(24);
     text(parrafodos, posX, posY2, 600, 200);
     posY2 += 2;
