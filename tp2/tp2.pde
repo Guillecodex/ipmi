@@ -82,7 +82,7 @@ void draw() {
     // Pantalla tres
     pushStyle();
     image(img3, 0, 0, width, height);
-    String parrafotres = "El día de su compromiso, es arrestado y llevado a prisión sin juicio, encerrado en el castillo de If";
+    String parrafotres = "El día de su compromiso, es arrestado y llevado a prisión sin juicio, encerrado en el castillo de If, En la cárcel, conoce al abate Faria, un prisionero que se convierte en su mentor y le revela la existencia de un tesoro oculto en la isla de Montecristo";
     textSize(24);
     textAlign(LEFT, TOP);
     fill(222);
@@ -112,7 +112,7 @@ void draw() {
     // Pantalla cuatro
     pushStyle();
     image(img4, 0, 0, width, height);
-    String parrafocuatro = "En la cárcel, conoce al abate Faria, un\nprisionero que se convierte en su mentor\n y le revela la existencia de un tesoro oculto\nen la isla de Montecristo. Tras su muerte,\nEdmond logra escapar y, siguiendo las\ninstrucciones del abate, encuentra el tesoro.";
+    String parrafocuatro = "Tras la muerte del abate, Edmond\nlogra escapar y, siguiendo las\ninstrucciones del abate, encuentra el tesoro. \nAños después, adopta la identidad del\nConde de Montecristo para vengarse\nde sus enemigos";
     textSize(24);
     textAlign(LEFT, TOP);
     fill(222);
@@ -136,6 +136,7 @@ void draw() {
     // Pantalla cinco
     pushStyle();
     image(img5, 0, 0, width, height);
+    filter(GRAY);
 
     // Incrementa opacidad hasta 255, haciendo lo contrario a la pantalla uno
     if (opacidad < 255) {
