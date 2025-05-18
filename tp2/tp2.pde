@@ -1,3 +1,7 @@
+// Guillermo Matías Martínez Escalante
+//Legajo 122685/9
+//Comisión cinco
+
 PImage img1, img2, img3, img4, img5;
 float posX, posY, posY2;
 int pantalla;
